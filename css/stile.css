@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #46f693;
+}
+
+:focus{
+	outline: none;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	background-color: #393639;
+}
+
+/********************************* FORM ***************************************/
+.formContainer{
+    background-color: #171615;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px #a2a2a2;
+}
+
+.formHeading{
+	font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+form{
+	margin-top: 100px;
+	height: 340px;
+	position: relative;
+}
+
+.formInput{
+	display: block;
+    margin: auto;
+	border: none;
+	font-size: 20px;
+}
+
+input.formInput{
+	height: 50px;
+    width: 300px;
+	margin-top: 10px;
+	border-radius: 6px;
+	background-color: #393639;
+	position: relative;
+    top: 10px;
+	text-indent: 15px;
+}
+
+input.loginInput{
+    top: 40px;
+}
+
+button.formInput{
+	background-color: #46f693;
+    color: #171615;
+	border-radius: 20px;
+    height: 50px;
+    width: 160px;
+	position: absolute;
+	bottom: 40px;
+	left: 220px; /*(div.width / 2) - (btn.width/2)*/
+}
+
+button.formInput:active{
+  background: #19946b;
+}
+
+#errorBox{
+	text-align: center;
+    position: relative;
+    bottom: 120px;
+}
+
+#errorBox > span{
+	color: #de2545;
+}
+
+footer{
+	position: relative;
+    bottom: -12px;
+    width: 100%;
+	text-align: center;
+}
+
+/****************************** pagina di gioco *******************************/
+
+#left{
+	width: 20%;
+	float: left;
+}
+
+#main{
+	width: 60%;
+	float: left;
+}
+
+#right{
+	width: 20%;
+	float: right;
+}
+
+
+#user{
+	font-size: 40px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#personalHighScoreDiv{
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+#highScoreHeading{
+	margin: 8px;
+}
+
+.gameInfoLabels{
+	margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.infoContainer{
+	background-color: #282129;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    padding-right: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 12px #000 inset;
+    font-size: 25px;
+    text-align: right;
+    line-height: 44px;
+}
+
+#area{
+	background-color: #282129;
+    overflow: hidden;
+	box-shadow: 0 0 4px 2px #000 inset;
+	position: relative;
+    margin: auto;
+	text-align: center;
+}
+
+#logout{
+	position: relative;
+    top: 5px;
+    left: 140px;
+	background-color: #282129;
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 0 0 6px #000 inset;
+}
+
+#logout > img{
+	vertical-align: middle;
+}
+
+.audioButton{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	margin-top: 10px;
+	padding: 5px;
+    display: block;
+	height: 56px;
+    width: 56px;
+	background-color: #282129;
+	border-radius: 30px;
+    border-style: solid;
+	border-width: 2px;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.musicOn{
+	background-image: url("./../img/music0.png");
+	border-color: #46f693;
+}
+
+.musicOff{
+	background-image: url("./../img/music1.png");
+	border-color: #de2545;
+}
+
+.soundsOn{
+	background-image: url("./../img/audio0.png");
+	border-color: #46f693;
+}
+
+.soundsOff{
+	background-image: url("./../img/audio1.png");
+	border-color: #de2545;
+}
+
+#controlsDiv{
+	position: relative;
+	top: 180px;
+}
+
+#controlsDiv > img{
+	display: block;
+	margin: auto;
+}
+
+.instruction{
+	margin-top: 5px;
+    margin-bottom: 20px;
+	text-align: center;
+    color: #666666;
+}
+
+/*************************** elementi di gioco *******************************/
+
+#breakoutLogo{
+	position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 200px;
+}
+
+#gameOverLogo{
+	position: absolute;
+    left: 100px;
+    top: 30px;
+    height: 200px;
+}
+
+#startMessage{
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+}
+
+#gameOverContinue{
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+}
+
+#personalScoreGameOver{
+	margin-top: 220px;
+}
+
+table{
+	margin: auto;
+}
+
+#pad{
+    position:absolute;
+	top: 550px;
+	height: 15px;
+	background-color: #607D8B;
+	border-radius: 5px;
+}
+
+.brick{
+	position: absolute;
+    box-shadow: 0 0 0 1px #282129 inset;
+}
+
+.metal{
+	background-image: url("./../img/metalBrick.png");
+}
+
+.ball{
+	position: absolute;
+	background-color: #46f693;	
+	width: 13px;
+	height: 13px;
+	border-radius: 10px;
+
+}
+
+.bonus{
+	position: absolute;
+	height: 20px;
+	width: 50px;
+	background-size: contain;
+}
+
+.bonusType0{
+	background-image: url("./../img/bonus0.png");
+}
+
+.bonusType1{
+	background-image: url("./../img/bonus1.png");
+}
+
+.bonusType2{
+	background-image: url("./../img/bonus2.png");
+}
+
+.bonusType3{
+	background-image: url("./../img/bonus3.png");
+}
+
+.bonusType4{
+	background-image: url("./../img/bonus4.png");
+}
+
+.bonusType5{
+	background-image: url("./../img/bonus5.png");
+}
+
+.message{
+	position:relative;
+   	height: 150px;
+	width: 300px;
+	
+	left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-75px;
+	
+	background-color: #a5a5a5;
+	
+	box-shadow: 9px 8px 6px 0px rgba(0, 0, 0, 0.5);
+    border: solid;
+    color: #171615;
+	
+	text-align: center;
+	line-height: 150px;
+	font-size: 30px;
+}
+
+/******************************** how to play ********************************/
+
+li > p{
+	margin-left: 10px;
+	display: inline;
+}
+
+li > img{
+	vertical-align: middle;
+}
+
+li{
+	list-style: none;
+	margin: 5px;
+}
+
+#contenitoreManuale{
+	margin: 10px;
+}
+
+#headingManuale{
+	text-align: center;
+}
+
+#HTPIndietro{
+	font-size: 18px;
+}
+
+#HTPIndietro > img{
+	vertical-align: middle;
+}
